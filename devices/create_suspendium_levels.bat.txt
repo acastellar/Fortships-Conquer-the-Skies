@@ -1,0 +1,6 @@
+echo hi
+FOR /L %%A IN (0,1,100) DO (
+	echo %%A
+	copy suspendium_source.lua suspendium_levels\suspendium_%%A.lua
+	echo Mass=-^(%%A * 40^) >> suspendium_levels\suspendium_%%A.lua
+)
